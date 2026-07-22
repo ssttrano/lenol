@@ -462,8 +462,18 @@ body.lock {
     padding: 1px 10px;
   }
   .hero__images {
-    max-width: 213px;
     bottom: 49px;
+    flex-direction: column;
+    max-width: 100vw;
+    position: relative;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+  }
+  .hero{
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
   }
   .header__container {
     height: 65px;
@@ -478,6 +488,17 @@ body.lock {
     line-height: 55px;
     font-size: 18px;
   }
+  .hero__container{
+    height: auto;
+  }
+  .hero_decoration {
+    max-width: 499px;
+    width: 100%;
+    position: absolute;
+    bottom: 490px;
+    left: 0;
+    z-index: 1;
+}
 }
 @media (max-width: 330px) {
   .hero__title {
