@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ЛЕНОЛ</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/faq.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__logo">
+          <img src="/img/logo.svg" alt="Логотип" />
+        </div>
+
+        <div class="header__menu">
+          <nav class="header__nav">
+            <ul>
+              <li><a href="#">Каталог</a></li>
+              <li><a href="#">Прайс-лист</a></li>
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Вопрос / ответ</a></li>
+              <li><a href="#">Статьи</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+
+          <!-- Дублируем телефон для удобства внутри мобильного меню -->
+          <div class="header__phone header__phone--mobile">
+            <a href="tel:+79001234567">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M23.0066 29.0943C22.717 29.0935 22.4283 29.0617 22.1454 28.9995C16.7606 27.8856 11.7997 25.2738 7.83377 21.4648C3.95246 17.6474 1.26056 12.787 0.083773 7.47176C-0.0549852 6.80932 -0.0209285 6.12231 0.182667 5.47684C0.386262 4.83137 0.752544 4.24915 1.24627 3.78621L4.69072 0.470928C4.86665 0.30455 5.07569 0.177142 5.30419 0.0970179C5.53269 0.0168938 5.77552 -0.0141449 6.01683 0.00592759C6.26704 0.0320304 6.50849 0.112631 6.7242 0.24206C6.93992 0.37149 7.12466 0.546606 7.26544 0.755094L11.571 7.11871C11.7325 7.36562 11.8104 7.65785 11.7933 7.95238C11.7763 8.2469 11.6652 8.52818 11.4763 8.75482L9.31488 11.3381C10.1757 13.2433 11.3948 14.9652 12.9057 16.4101C14.4069 17.9074 16.1812 19.103 18.1327 19.932L20.8107 17.8051C21.0356 17.6273 21.3093 17.5222 21.5954 17.5038C21.8815 17.4853 22.1665 17.5544 22.4124 17.7018L28.9138 21.904C29.1369 22.0372 29.327 22.2192 29.4697 22.4363C29.6125 22.6534 29.7044 22.9 29.7383 23.1576C29.7723 23.4152 29.7475 23.6772 29.6659 23.9239C29.5842 24.1705 29.4478 24.3956 29.2668 24.582L25.9085 27.9059C25.527 28.2855 25.0742 28.586 24.5762 28.7899C24.0782 28.9938 23.5447 29.0973 23.0066 29.0943ZM5.87905 1.71093L2.43461 5.02621C2.15686 5.28501 1.95125 5.61166 1.83802 5.97402C1.72478 6.33637 1.70781 6.72197 1.78877 7.09287C2.88301 12.0805 5.39831 16.6446 9.03072 20.2334C12.7629 23.817 17.4314 26.2736 22.4985 27.3204C22.882 27.4006 23.2795 27.3843 23.6552 27.2731C24.0309 27.1619 24.3732 26.9592 24.6513 26.6831L28.0096 23.3593L21.7321 19.3034L18.856 21.594C18.7459 21.6811 18.6161 21.74 18.4781 21.7655C18.34 21.7911 18.1978 21.7824 18.0638 21.7404C15.6757 20.8605 13.5115 19.4638 11.726 17.6501C9.87922 15.9255 8.4457 13.8061 7.53238 11.4501C7.49375 11.3075 7.49246 11.1573 7.52866 11.014C7.56485 10.8707 7.63731 10.7392 7.73905 10.632L10.0641 7.85065L5.87905 1.71093Z"
+                  fill="currentColor"
+                />
+              </svg>
+              +7 (900) 123-45-67
+            </a>
+          </div>
+        </div>
+
+        <div class="header__phone header__phone--desktop">
+          <a href="tel:+79001234567">
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M23.0066 29.0943C22.717 29.0935 22.4283 29.0617 22.1454 28.9995C16.7606 27.8856 11.7997 25.2738 7.83377 21.4648C3.95246 17.6474 1.26056 12.787 0.083773 7.47176C-0.0549852 6.80932 -0.0209285 6.12231 0.182667 5.47684C0.386262 4.83137 0.752544 4.24915 1.24627 3.78621L4.69072 0.470928C4.86665 0.30455 5.07569 0.177142 5.30419 0.0970179C5.53269 0.0168938 5.77552 -0.0141449 6.01683 0.00592759C6.26704 0.0320304 6.50849 0.112631 6.7242 0.24206C6.93992 0.37149 7.12466 0.546606 7.26544 0.755094L11.571 7.11871C11.7325 7.36562 11.8104 7.65785 11.7933 7.95238C11.7763 8.2469 11.6652 8.52818 11.4763 8.75482L9.31488 11.3381C10.1757 13.2433 11.3948 14.9652 12.9057 16.4101C14.4069 17.9074 16.1812 19.103 18.1327 19.932L20.8107 17.8051C21.0356 17.6273 21.3093 17.5222 21.5954 17.5038C21.8815 17.4853 22.1665 17.5544 22.4124 17.7018L28.9138 21.904C29.1369 22.0372 29.327 22.2192 29.4697 22.4363C29.6125 22.6534 29.7044 22.9 29.7383 23.1576C29.7723 23.4152 29.7475 23.6772 29.6659 23.9239C29.5842 24.1705 29.4478 24.3956 29.2668 24.582L25.9085 27.9059C25.527 28.2855 25.0742 28.586 24.5762 28.7899C24.0782 28.9938 23.5447 29.0973 23.0066 29.0943ZM5.87905 1.71093L2.43461 5.02621C2.15686 5.28501 1.95125 5.61166 1.83802 5.97402C1.72478 6.33637 1.70781 6.72197 1.78877 7.09287C2.88301 12.0805 5.39831 16.6446 9.03072 20.2334C12.7629 23.817 17.4314 26.2736 22.4985 27.3204C22.882 27.4006 23.2795 27.3843 23.6552 27.2731C24.0309 27.1619 24.3732 26.9592 24.6513 26.6831L28.0096 23.3593L21.7321 19.3034L18.856 21.594C18.7459 21.6811 18.6161 21.74 18.4781 21.7655C18.34 21.7911 18.1978 21.7824 18.0638 21.7404C15.6757 20.8605 13.5115 19.4638 11.726 17.6501C9.87922 15.9255 8.4457 13.8061 7.53238 11.4501C7.49375 11.3075 7.49246 11.1573 7.52866 11.014C7.56485 10.8707 7.63731 10.7392 7.73905 10.632L10.0641 7.85065L5.87905 1.71093Z"
+                fill="white"
+              />
+            </svg>
+            <span>+7 (900) 123-45-67</span>
+          </a>
+        </div>
+
+        <!-- Кнопка бургер-меню -->
+        <button class="header__burger" aria-label="Меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="hero__container container">
+        <div class="hero__column">
+          <ul class="hero__header">
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Прайс-лист</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Вопрос / ответ</a></li>
+            <li><a href="#">Статьи</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <div class="hero__logo-column">
+            <div class="hero__logo">
+              <img src="/img/mount.svg" alt="" />
+              <h1 class="hero__title">ЛЕНОЛ</h1>
+              <p class="hero__subtitle">
+                Продовольственные наборы длительного хранения
+              </p>
+            </div>
+            <div class="hero__buttons">
+              <a href="#" class="hero__button main">Посмотреть ассортимент</a>
+              <a href="#" class="hero__button side">О компании</a>
+            </div>
+          </div>
+        </div>
+        <div class="hero_decoration">
+          <img src="img/decor.svg" alt="" />
+        </div>
+      </div>
+      <div class="hero__images">
+        <img src="/img/hero1.png" alt="" />
+        <img src="/img/hero2.png" alt="" />
+      </div>
+    </section>
+    <section class="catalog">
+      <div class="catalog__container container">
+        <h3 class="catalog__title">Каталог продукции</h3>
+        <div class="catalog__content">
+          <div class="catalog__card">
+            <div class="catalog__card-img">
+              <img src="img/tovar1.png" alt="" />
+            </div>
+            <h5 class="catalog__card-title">
+              PRO 24 — Экспедиционный рацион (≈ 3 800 ккал)
+            </h5>
+            <div class="catalog__card-table">
+              <div class="catalog__card-item">
+                <p>Размеры</p>
+                <span>280мм * 165 мм * 100 мм</span>
+              </div>
+              <div class="catalog__card-item">
+                <p>Продукт</p>
+                <p>Количество</p>
+              </div>
+              <div class="catalog__card-item">
+                <span>Тушенка говяжья</span>
+                <p>2 × 325 г</p>
+              </div>
+              <div class="catalog__card-item">
+                <span>Каша с мясом</span>
+                <p>2 × 250 г</p>
+              </div>
+              <div class="catalog__card-item">
+                <span>Галеты</span>
+                <p>250 г</p>
+              </div>
+              <div class="catalog__card-item">
+                <span>Паштет</span>
+                <p>100 г</p>
+              </div>
+              <div class="catalog__card-item">
+                <span>Орехи</span>
+                <p>150 г</p>
+              </div>
+              <div class="catalog__card-item">
+                <span>Шоколад</span>
+                <p>100 г</p>
+              </div>
+              <div class="catalog__card-item">
+                <span>Сухофрукты</span>
+                <p>100 г</p>
+              </div>
+              <div class="catalog__card-item">
+                <span>Сахар</span>
+                <p>40 г</p>
+              </div>
+              <div class="catalog__card-item price">
+                <p>Цена</p>
+                <p>1200 ₽</p>
+              </div>
+              <button class="catalog__card-btn">Заказать набор</button>
+            </div>
+          </div>
+          <div class="catalog__card">
+            <div class="catalog__card-img">
+              <img src="img/tovar1.png" alt="" />
+            </div>
+            <h5 class="catalog__card-title">
+              PRO 24 — Экспедиционный рацион (≈ 3 800 ккал)
+            </h5>
+            <div class="catalog__card-table">
+              <div class="catalog__card-item">
+                <p>Размеры</p>
+                <span>280мм * 165 мм * 100 мм</span>
+              </div>
+              <div class="catalog__card-item">
+                <p>Продукт</p>
+                <p>Количество</p>
+              </div>
+              <div class="catalog__card-item">
+                <span>Тушенка говяжья</span>
+                <p>2 × 325 г</p>
+              </div>
+              <div class="catalog__card-item">
+                <span>Каша с мясом</span>
+                <p>2 × 250 г</p>
+              </div>
+              <div class="catalog__card-item">
+                <span>Галеты</span>
+                <p>250 г</p>
+              </div>
+              <div class="catalog__card-item">
+                <span>Паштет</span>
+                <p>100 г</p>
+              </div>
+              <div class="catalog__card-item">
+                <span>Орехи</span>
+                <p>150 г</p>
+              </div>
+              <div class="catalog__card-item">
+                <span>Шоколад</span>
+                <p>100 г</p>
+              </div>
+              <div class="catalog__card-item">
+                <span>Сухофрукты</span>
+                <p>100 г</p>
+              </div>
+              <div class="catalog__card-item">
+                <span>Сахар</span>
+                <p>40 г</p>
+              </div>
+              <div class="catalog__card-item price">
+                <p>Цена</p>
+                <p>1200 ₽</p>
+              </div>
+              <button class="catalog__card-btn">Заказать набор</button>
+            </div>
+          </div>
+          <div class="catalog__card">
+            <div class="catalog__card-img">
+              <img src="img/tovar1.png" alt="" />
+            </div>
+            <h5 class="catalog__card-title">
+              PRO 24 — Экспедиционный рацион (≈ 3 800 ккал)
+            </h5>
+            <div class="catalog__card-table">
+              <div class="catalog__card-item">
+                <p>Размеры</p>
+                <span>280мм * 165 мм * 100 мм</span>
+              </div>
+              <div class="catalog__card-item">
+                <p>Продукт</p>
+                <p>Количество</p>
+              </div>
+              <div class="catalog__card-item">
+                <span>Тушенка говяжья</span>
+                <p>2 × 325 г</p>
+              </div>
+              <div class="catalog__card-item">
+                <span>Каша с мясом</span>
+                <p>2 × 250 г</p>
+              </div>
+              <div class="catalog__card-item">
+                <span>Галеты</span>
+                <p>250 г</p>
+              </div>
+              <div class="catalog__card-item">
+                <span>Паштет</span>
+                <p>100 г</p>
+              </div>
+              <div class="catalog__card-item">
+                <span>Орехи</span>
+                <p>150 г</p>
+              </div>
+              <div class="catalog__card-item">
+                <span>Шоколад</span>
+                <p>100 г</p>
+              </div>
+              <div class="catalog__card-item">
+                <span>Сухофрукты</span>
+                <p>100 г</p>
+              </div>
+              <div class="catalog__card-item">
+                <span>Сахар</span>
+                <p>40 г</p>
+              </div>
+              <div class="catalog__card-item price">
+                <p>Цена</p>
+                <p>1200 ₽</p>
+              </div>
+              <button class="catalog__card-btn">Заказать набор</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="question">
+      <div class="question__container container">
+        <div class="question__column">
+          <p>
+            Есть вопросы? <br />
+            Свяжитесь с нами!
+          </p>
+        </div>
+        <div class="question__phone">
+          <a href="" class="question__num">+7 (900) 123-45-67</a>
+          <a href="" class="question__btn">Позвонить</a>
+        </div>
+      </div>
+    </div>
+    <section class="faq">
+      <div class="faq__container container">
+        <h3 class="faq__title">Частые вопросы</h3>
+
+        <div class="faq__content">
+          <!-- Элемент 1 -->
+          <div class="faq__item">
+            <button class="faq__quest" type="button" aria-expanded="false">
+              <span class="faq__quest-text">Как оформляется заказ?</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq__ans">
+              <div class="faq__ans-inner">
+                Выберите необходимые товары, добавьте их в корзину и перейдите к
+                оформлению. Введите данные для доставки и выберите удобный
+                способ оплаты.
+              </div>
+            </div>
+          </div>
+
+          <!-- Элемент 2 -->
+          <div class="faq__item">
+            <button class="faq__quest" type="button" aria-expanded="false">
+              <span class="faq__quest-text"
+                >Сколько времени занимает доставка?</span
+              >
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq__ans">
+              <div class="faq__ans-inner">
+                Обычно доставка занимает от 1 до 3 рабочих дней в зависимости от
+                вашего региона и выбранного способа службы доставки.
+              </div>
+            </div>
+          </div>
+
+          <!-- Элемент 3 -->
+          <div class="faq__item">
+            <button class="faq__quest" type="button" aria-expanded="false">
+              <span class="faq__quest-text">Можно ли вернуть товар?</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq__ans">
+              <div class="faq__ans-inner">
+                Да, вы можете вернуть товар в течение 14 дней с момента
+                получения, если сохранен его товарный вид и упаковка.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__quest" type="button" aria-expanded="false">
+              <span class="faq__quest-text">Как оформляется заказ?</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq__ans">
+              <div class="faq__ans-inner">
+                Выберите необходимые товары, добавьте их в корзину и перейдите к
+                оформлению. Введите данные для доставки и выберите удобный
+                способ оплаты.
+              </div>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__quest" type="button" aria-expanded="false">
+              <span class="faq__quest-text">Как оформляется заказ?</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq__ans">
+              <div class="faq__ans-inner">
+                Выберите необходимые товары, добавьте их в корзину и перейдите к
+                оформлению. Введите данные для доставки и выберите удобный
+                способ оплаты.
+              </div>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__quest" type="button" aria-expanded="false">
+              <span class="faq__quest-text">Как оформляется заказ?</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq__ans">
+              <div class="faq__ans-inner">
+                Выберите необходимые товары, добавьте их в корзину и перейдите к
+                оформлению. Введите данные для доставки и выберите удобный
+                способ оплаты.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <div class="contacts__container container">
+        <h2 class="contacts__title">Наши контакты</h2>
+
+        <div class="contacts__table">
+          <!-- Секция 1: Контакты -->
+          <div class="contacts__category">Контакты для связи</div>
+          <dl class="contacts__list">
+            <div class="contacts__item">
+              <dt>Адрес</dt>
+              <dd>г. Пенза, ул. Стрельбищенская, стр. 60</dd>
+            </div>
+            <div class="contacts__item">
+              <dt>Телефон</dt>
+              <dd>
+                <a href="tel:+79270944164" class="contacts__link"
+                  >+7 (927) 094 41 64</a
+                >
+              </dd>
+            </div>
+            <div class="contacts__item">
+              <dt>Email</dt>
+              <dd>
+                <a href="mailto:lenol5800@mail.ru" class="contacts__link"
+                  >lenol5800@mail.ru</a
+                >
+              </dd>
+            </div>
+            <div class="contacts__item">
+              <dt>График работы</dt>
+              <dd>Пн–Пт: 9:00 – 18:00</dd>
+            </div>
+          </dl>
+
+          <!-- Секция 2: Юридические данные -->
+          <div class="contacts__category">Юридические данные</div>
+          <dl class="contacts__list">
+            <div class="contacts__item">
+              <dt>Наименование</dt>
+              <dd>ООО «Ленол»</dd>
+            </div>
+            <div class="contacts__item">
+              <dt>Юр. адрес</dt>
+              <dd>
+                440023, Россия, Пензенская обл., г. Пенза, ул. Стрельбищенская,
+                стр. 60
+              </dd>
+            </div>
+            <div class="contacts__item">
+              <dt>Ген. директор</dt>
+              <dd>Севастополев Марат Рашитович</dd>
+            </div>
+            <div class="contacts__item">
+              <dt>ИНН / КПП</dt>
+              <dd>5835130739 / 583501001</dd>
+            </div>
+            <div class="contacts__item">
+              <dt>ОГРН</dt>
+              <dd>1185835017037</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+<footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__head">
+          <div class="footer__logo">
+<img src="img/white-m.svg" alt="">
+            <h4>ЛЕНОЛ</h4>
+            <p>Продовольственные наборы длительного хранения</p>
+          </div>
+          <div class="footer__card">
+            <div class="footer__card-column">
+              <p class="footer__card-text">Для заказа, а так же, по всем возникшим вопросам звонить по телефону</p>
+              <a href="tel:+79001234567" class="footer__card-num">+7 (900) 123-45-67</a>
+            </div>
+            <div class="footer__card-btn">
+              <a href="tel:+79001234567">Позвонить</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- НОВЫЙ БЛОК: ТРИ КОЛОНКИ -->
+        <div class="footer__body">
+          <!-- 1 Колонка -->
+          <div class="footer__col">
+            <h5 class="footer__col-title">Контакты</h5>
+            <ul class="footer__list">
+              <li>
+                <span>Фактический адрес:</span>
+                <br>г. Пенза, ул. Стрельбищенская, стр. 60
+              </li>
+              <li>
+                <span>Контактный телефон:</span>
+                <br><a href="tel:+79270944164" class="footer__link">+7 (927) 094 41 64</a>
+              </li>
+              <li>
+                <span>Электронная почта:</span>
+                <br><a href="mailto:lenol5800@mail.ru" class="footer__link">lenol5800@mail.ru</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 2 Колонка -->
+          <div class="footer__col">
+            <h5 class="footer__col-title">Навигация</h5>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__link">Каталог</a></li>
+              <li><a href="#" class="footer__link">Прайс-лист</a></li>
+              <li><a href="#" class="footer__link">О нас</a></li>
+              <li><a href="#" class="footer__link">Вопрос / ответ</a></li>
+              <li><a href="#" class="footer__link">Статьи</a></li>
+              <li><a href="#" class="footer__link">Контакты</a></li>
+            </ul>
+          </div>
+
+          <!-- 3 Колонка -->
+          <div class="footer__col">
+            <h5 class="footer__col-title">Информация</h5>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__link">Политика конфиденциальности</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- НОВЫЙ БЛОК: КОПИРАЙТ -->
+        <div class="footer__bottom">
+          <p class="footer__copy">&copy; 2026 ЛЕНОЛ. Все права защищены.</p>
+        </div>
+
+      </div>
+    </footer>
+    <script src="js/header.js"></script>
+
+    <!-- <div class="" style="height: 100vh;"></div> -->
+  </body>
+</html>
